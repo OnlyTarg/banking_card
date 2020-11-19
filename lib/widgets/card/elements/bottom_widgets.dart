@@ -8,13 +8,18 @@ class BottomWidgets extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 10,right: 10),
+      padding: const EdgeInsets.only(left: 10, right: 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Flexible(flex: 1, child: Image.asset('assets/Visa.png')),
           Flexible(flex: 2, child: SizedBox()),
-          Flexible(flex: 2, child: FloatingActionButton(child: Icon(Icons.add))),// Switch(value: null, onChanged: null)
+          Flexible(
+              flex: 2,
+              child: FloatingActionButton(
+                child: Icon(Icons.add),
+                onPressed: () {},
+              )),
         ],
       ),
     );

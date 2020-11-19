@@ -6,16 +6,16 @@ class CardBack extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(15),
-        child: Container(
-          child: Column(
-            children: [],
+      child: Stack(
+        children: [
+          Container(
+            width: double.infinity,
+            height: 400,
+            child: Image.asset(
+              'assets/CardBack.png',
+            ),
           ),
-          width: 260,
-          height: 360,
-          color: Colors.blue,
-        ),
+        ],
       ),
     );
   }
